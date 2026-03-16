@@ -1,42 +1,50 @@
 MotorPH Payroll System
+
 Goroup - 44
-Senvenizer I. Valles lr.svalles@mmdc.mcl.edu
+
+lr.svalles@mmdc.mcl.edu
+lr.segagamao@mmdc.mcl.edu.ph
+lr.skzotomayor@mmdc.mcl.edu.ph
+
 Project Overview
+======================================================================
 
 The MotorPH Payroll System is a Java-based console application designed to automate payroll management for MotorPH employees. It allows employees to view their personal information and enables payroll staff to compute salaries efficiently based on attendance records. The system reads data from CSV files, making it easy to update employee details or attendance without modifying the program.
 
 Features
+==================================================================================
 
 User Login
 
-Employee login: Employees can check their personal information such as employee number, full name, and birthday.
+  Employee login: Employees can check their personal information such as employee number, full name, and birthday.
 
-Payroll staff login: Payroll staff can process salaries for individual employees or all employees at once.
+  Payroll staff login: Payroll staff can process salaries for individual employees or all employees at once.
 
 Employee Information
 
-Displays the employee number, full name, and birthday.
+  Displays the employee number, full name, and birthday.
 
 Payroll Processing
 
-Calculates total hours worked per cutoff period (1–15 and 16–30 of each month).
+  Calculates total hours worked per cutoff period (1–15 and 16–30 of each month).
 
-Computes gross and net salaries.
+  Computes gross and net salaries.
 
-Deducts contributions for SSS, PhilHealth, Pag-IBIG, and applicable taxes.
+  Deducts contributions for SSS, PhilHealth, Pag-IBIG, and applicable taxes.
 
-Supports processing payroll for a single employee or all employees in the system.
+  Supports processing payroll for a single employee or all employees in the system.
 
 Time Handling
 
-Work hours are calculated only between 8:00 AM and 5:00 PM.
+  Work hours are calculated only between 8:00 AM and 5:00 PM.
 
-Lunch break of 1 hour is automatically subtracted.
+  Lunch break of 1 hour is automatically subtracted.
 
-Maximum work hours per day are limited to 8 hours.
+  Maximum work hours per day are limited to 8 hours.
 
 Getting Started
 Prerequisites
+=================================================================
 
 Java Development Kit (JDK) installed on your computer.
 
@@ -44,17 +52,19 @@ Setup
 
 Place the following CSV files in the src folder:
 
-MotorPH_Employee Data.csv
+1. MotorPH_Employee Data.csv
 
-MotorPH_Employee Attendance Record.csv
+2. MotorPH_Employee Attendance Record.csv
 
 Open a terminal or command prompt in the project folder.
 
 Compile and run the program:
 
-javac main.java
-java main
+    javac main.java
+    java main
+
 Login Credentials
+==========
 
 Employee:
 
@@ -70,17 +80,21 @@ Password: 12345
 
 Once logged in, follow the on-screen menus to navigate through the system.
 
+
+------------------------------------------------------------------------------------
+
 CSV File Format
+------------------------------------------------------------------
 Employee Data (MotorPH_Employee Data.csv)
 
 The employee CSV should include at least the following columns:
 
-Column	Description
-0	Employee Number
-1	Last Name
-2	First Name
-3	Birthday
-18	Hourly Rate
+    Column	Description
+    0	Employee Number
+    1	Last Name
+    2	First Name
+    3	Birthday
+    18	Hourly Rate
 
 Note: Hourly rate must be numeric and placed in column 18. Quotation marks or extra spaces may cause errors.
 
@@ -101,6 +115,7 @@ Payroll Calculation Notes
 Cut-off periods: Salaries are computed in two halves per month: 1–15 and 16–30.
 
 Deductions:
+------------------------------------------------------------------
 
 SSS: Based on the employee’s monthly gross salary using the official SSS table.
 
@@ -113,6 +128,7 @@ Tax: Computed based on taxable income after deductions, according to the simplif
 Net Salary: Calculated by subtracting total deductions (SSS, PhilHealth, Pag-IBIG, and tax) from the gross salary of the second cutoff.
 
 How It Works
+----------
 
 User logs in as either an employee or payroll staff.
 
@@ -134,4 +150,3 @@ Only the months June to December are currently processed in this version.
 
 The program uses console input and output, so it runs entirely in a terminal or command prompt.
 
-This system is suitable for small-scale payroll processing and educational purposes.
