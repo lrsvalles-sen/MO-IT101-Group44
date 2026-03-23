@@ -3,7 +3,7 @@ MO-IT101-Group44
 
 MotorPH Payroll System
 
-Goroup - 44
+Group - 44
 
 lr.svalles@mmdc.mcl.edu
 lr.segagamao@mmdc.mcl.edu.ph
