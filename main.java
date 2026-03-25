@@ -85,9 +85,6 @@ public class main {
         boolean found = false;
 
         try{
-            // NOTE: File is opened every time this method runs.
-            // For better performance, this should be loaded once into memory (ArrayList),
-            // but kept simple here for beginner implementation.
             BufferedReader br = new BufferedReader(new FileReader(employeeFile));
 
             br.readLine(); // skip header
